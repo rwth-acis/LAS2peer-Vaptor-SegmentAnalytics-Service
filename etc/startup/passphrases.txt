@@ -1,0 +1,4 @@
+agent-service-i5.las2peer.services.analytics.xml;test
+agent-user-alice.xml;pwalice
+agent-user-bobby.xml;pwbobby
+agent-user-joey.xml;pwjoey

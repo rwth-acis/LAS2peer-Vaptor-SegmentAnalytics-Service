@@ -1,0 +1,7 @@
+
+timestamp	event code	source node	source agent	destination node	destination agent	additional remarks
+---------	----------	-----------	------------	-----------	------------	------------------
+Sep 11, 2015 11:21:52 PM	NODE_STATUS_CHANGE (300)	-	-	-	-	CONFIGURED	
+Sep 11, 2015 11:21:52 PM	NODE_STATUS_CHANGE (300)	-	-	-	-	RUNNING	
+Sep 11, 2015 11:21:53 PM	AGENT_REGISTERED (3000)	476371395023765095 (java.lang.Long)	-4559178927162455446	-	-	ServiceAgent	
+Sep 11, 2015 11:21:53 PM	AGENT_LOAD_FAILED (-3000)	i5.las2peer.p2p.LocalNode@43b6123e (i5.las2peer.p2p.LocalNode)	-4559178927162455446	-	-	i5.las2peer.execution.L2pServiceException: Service class not found!	

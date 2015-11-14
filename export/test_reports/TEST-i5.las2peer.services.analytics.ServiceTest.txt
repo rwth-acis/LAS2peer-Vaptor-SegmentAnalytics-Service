@@ -1,0 +1,27 @@
+Testsuite: i5.las2peer.services.analytics.ServiceTest
+Tests run: 0, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 3.248 sec
+
+Testcase: i5.las2peer.services.analytics.ServiceTest took 0 sec
+	Caused an ERROR
+Service class not found!
+i5.las2peer.execution.L2pServiceException: Service class not found!
+	at i5.las2peer.security.ServiceAgent.notifyRegistrationTo(ServiceAgent.java:446)
+	at i5.las2peer.p2p.Node.registerReceiver(Node.java:610)
+	at i5.las2peer.p2p.LocalNode.registerReceiver(LocalNode.java:75)
+	at i5.las2peer.services.analytics.ServiceTest.startServer(ServiceTest.java:76)
+	at org.eclipse.ant.internal.launching.remote.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.run(InternalAntRunner.java:424)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.main(InternalAntRunner.java:138)
+Caused by: java.lang.ClassNotFoundException: i5.las2peer.services.userPreference.PreferenceClass
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at i5.las2peer.security.ServiceAgent.notifyRegistrationTo(ServiceAgent.java:427)
+
+Testcase: i5.las2peer.services.analytics.ServiceTest took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at i5.las2peer.services.analytics.ServiceTest.shutDownServer(ServiceTest.java:112)
+	at org.eclipse.ant.internal.launching.remote.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.run(InternalAntRunner.java:424)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.main(InternalAntRunner.java:138)
+
