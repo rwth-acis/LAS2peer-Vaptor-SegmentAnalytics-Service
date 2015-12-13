@@ -5,3 +5,42 @@ Sep 11, 2015 11:21:52 PM	NODE_STATUS_CHANGE (300)	-	-	-	-	CONFIGURED
 Sep 11, 2015 11:21:52 PM	NODE_STATUS_CHANGE (300)	-	-	-	-	RUNNING	
 Sep 11, 2015 11:21:53 PM	AGENT_REGISTERED (3000)	476371395023765095 (java.lang.Long)	-4559178927162455446	-	-	ServiceAgent	
 Sep 11, 2015 11:21:53 PM	AGENT_LOAD_FAILED (-3000)	i5.las2peer.p2p.LocalNode@43b6123e (i5.las2peer.p2p.LocalNode)	-4559178927162455446	-	-	i5.las2peer.execution.L2pServiceException: Service class not found!	
+
+timestamp	event code	source node	source agent	destination node	destination agent	additional remarks
+---------	----------	-----------	------------	-----------	------------	------------------
+Dec 13, 2015 1:47:25 PM	NODE_STATUS_CHANGE (300)	-	-	-	-	CONFIGURED	
+Dec 13, 2015 1:47:25 PM	NODE_STATUS_CHANGE (300)	-	-	-	-	RUNNING	
+Dec 13, 2015 1:47:26 PM	AGENT_REGISTERED (3000)	-6955000161541214200 (java.lang.Long)	-4559178927162455446	-	-	ServiceAgent	
+Dec 13, 2015 1:47:26 PM	AGENT_LOAD_FAILED (-3000)	i5.las2peer.p2p.LocalNode@17cdf2d0 (i5.las2peer.p2p.LocalNode)	-4559178927162455446	-	-	i5.las2peer.execution.L2pServiceException: Service class not found!	
+
+timestamp	event code	source node	source agent	destination node	destination agent	additional remarks
+---------	----------	-----------	------------	-----------	------------	------------------
+Dec 13, 2015 1:48:39 PM	NODE_STATUS_CHANGE (300)	-	-	-	-	CONFIGURED	
+Dec 13, 2015 1:48:39 PM	NODE_STATUS_CHANGE (300)	-	-	-	-	RUNNING	
+Dec 13, 2015 1:48:41 PM	AGENT_REGISTERED (3000)	2667402475303220678 (java.lang.Long)	-4559178927162455446	-	-	ServiceAgent	
+Dec 13, 2015 1:48:41 PM	AGENT_LOAD_FAILED (-3000)	i5.las2peer.p2p.LocalNode@13e547a9 (i5.las2peer.p2p.LocalNode)	-4559178927162455446	-	-	i5.las2peer.execution.L2pServiceException: Service class not found!	
+
+timestamp	event code	source node	source agent	destination node	destination agent	additional remarks
+---------	----------	-----------	------------	-----------	------------	------------------
+Dec 13, 2015 1:56:36 PM	NODE_STATUS_CHANGE (300)	-	-	-	-	CONFIGURED	
+Dec 13, 2015 1:56:37 PM	NODE_STATUS_CHANGE (300)	-	-	-	-	RUNNING	
+Dec 13, 2015 1:56:37 PM	AGENT_REGISTERED (3000)	3318366261786771684 (java.lang.Long)	-4559178927162455446	-	-	ServiceAgent	
+Dec 13, 2015 1:56:37 PM	AGENT_LOAD_FAILED (-3000)	i5.las2peer.p2p.LocalNode@616ac46a (i5.las2peer.p2p.LocalNode)	-4559178927162455446	-	-	i5.las2peer.execution.L2pServiceException: Service class not found!	
+
+timestamp	event code	source node	source agent	destination node	destination agent	additional remarks
+---------	----------	-----------	------------	-----------	------------	------------------
+Dec 13, 2015 1:58:47 PM	NODE_STATUS_CHANGE (300)	-	-	-	-	CONFIGURED	
+Dec 13, 2015 1:58:47 PM	NODE_STATUS_CHANGE (300)	-	-	-	-	RUNNING	
+Dec 13, 2015 1:58:49 PM	AGENT_REGISTERED (3000)	-1127900798182186873 (java.lang.Long)	-5989738112201764625	-	-	ServiceAgent	
+Dec 13, 2015 1:58:49 PM	SERVICE_STARTUP (7000)	-1127900798182186873 (java.lang.Long)	-5989738112201764625	-	-	i5.las2peer.services.analytics.AnalyticsClass	
+Dec 13, 2015 1:58:49 PM	AGENT_REGISTERED (3000)	-1127900798182186873 (java.lang.Long)	6784596877	-	-	ServiceInfoAgent	
+Dec 13, 2015 1:58:50 PM	RMI_SENT (4000)	-1127900798182186873 (java.lang.Long)	6784596877	-	-	-	
+Dec 13, 2015 1:58:50 PM	CONNECTOR_MESSAGE (9000)	-1127900798182186873 (java.lang.Long)	-	-	-	WebConnector: Web-Connector in HTTP mode running on port 8080	
+Dec 13, 2015 1:58:52 PM	MESSAGE_RECEIVED (5000)	-1127900798182186873 (java.lang.Long)	6784596877	-1127900798182186873 (java.lang.Long)	-5989738112201764625	-1774314052005820777	
+Dec 13, 2015 1:58:52 PM	SERVICE_INVOCATION (7200)	-1127900798182186873 (java.lang.Long)	6784596877	-1127900798182186873 (java.lang.Long)	-5989738112201764625	i5.las2peer.services.analytics.AnalyticsClass/getRESTMapping	
+Dec 13, 2015 1:58:52 PM	SERVICE_INVOCATION_FINISHED (7210)	-1127900798182186873 (java.lang.Long)	6784596877	-1127900798182186873 (java.lang.Long)	-5989738112201764625	i5.las2peer.services.analytics.AnalyticsClass/getRESTMapping	
+Dec 13, 2015 1:58:54 PM	MESSAGE_RECEIVED_ANSWER (5001)	-1127900798182186873 (java.lang.Long)	-5989738112201764625	-1127900798182186873 (java.lang.Long)	6784596877	-1774314052005820777	
+Dec 13, 2015 1:58:54 PM	RMI_SUCCESSFUL (4100)	-1127900798182186873 (java.lang.Long)	6784596877	-	-	-	
+Dec 13, 2015 1:59:01 PM	CONNECTOR_MESSAGE (9000)	-1127900798182186873 (java.lang.Long)	-	-	-	WebConnector: Web-Connector has been stopped	
+Dec 13, 2015 1:59:01 PM	SERVICE_SHUTDOWN (7100)	-1127900798182186873 (java.lang.Long)	-5989738112201764625	-	-	i5.las2peer.services.analytics.AnalyticsClass	
+Dec 13, 2015 1:59:01 PM	NODE_SHUTDOWN (200)	-1127900798182186873 (java.lang.Long)	-	-	-	-	

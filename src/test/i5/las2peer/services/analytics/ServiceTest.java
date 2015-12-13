@@ -46,7 +46,7 @@ public class ServiceTest {
 	private static UserAgent testAgent;
 	private static final String testPass = "adamspass";
 	
-	private static final String testServiceClass = "i5.las2peer.services.userPreference.PreferenceClass";
+	private static final String testServiceClass = "i5.las2peer.services.analytics.AnalyticsClass";
 	
 	private static final String mainPath = "preference/";
 	
@@ -137,94 +137,7 @@ public class ServiceTest {
 	}
 	
 	
-	/**
-	 * Tests the User Preference Service for getting the preferences for a user
-	 */
-	//@Ignore("Used only for performance tests")
-	@Test
-	public void testGetUserPreference()
-	{
-		MiniClient c = new MiniClient();
-		c.setAddressPort(HTTP_ADDRESS, HTTP_PORT);
-		JSONObject o;
-		try
-		{
-			c.setLogin(Long.toString(testAgent.getId()), testPass);
-			//for (int i = 0; i < 100; i++){
-				//add a new objectCollection
-	            ClientResponse result=c.sendRequest("GET", mainPath +"?username=aarij", "*/*", new Pair[]{});
-	            assertEquals(200, result.getHttpCode());
-	            //assertTrue(result.getResponse().trim().contains("id")); 
-				System.out.println("Result of 'testCreateNodes': " + result.getResponse());
-			//}
-			
-			
-			/*for (int i = 0; i < 100; i++){
-				//add a new objectCollectionSecond
-	            ClientResponse result=c.sendRequest("POST", mainPath +"objects", "{\"collection\": \"" + objectCollectionSecond + "\"}", "application/json", "* /*", new Pair[]{});
-	            /*assertEquals(200, result.getHttpCode());
-	            assertTrue(result.getResponse().trim().contains("id")); 
-				System.out.println("Result of 'testCreateNodes': " + result.getResponse());
-			}*/
-			
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-			fail ( "Exception: " + e );
-		}
-		
-	}
 	
 	
-	/**
-	 * Tests the User Preference Service for posting the preferences for a user
-	 */
-	//@Ignore("Used only for performance tests")
-	/*@Test
-	public void testPostUserPreference()
-	{
-		MiniClient c = new MiniClient();
-		c.setAddressPort(HTTP_ADDRESS, HTTP_PORT);
 		
-		JSONObject preferenceObject = new JSONObject();
-		
-		preferenceObject.put("username","aTestUser");
-		preferenceObject.put("location","Hamburg, Germany");
-		preferenceObject.put("language","La");
-		preferenceObject.put("duration","3");
-		
-		preferenceObject.put("exp1","co");
-		preferenceObject.put("exp2","he");
-		preferenceObject.put("lvl1","1");
-		preferenceObject.put("lvl2","2");
-		preferenceObject.put("noOfExp","2");
-		
-		try
-		{
-			c.setLogin(Long.toString(testAgent.getId()), testPass);
-
-			
-            ClientResponse result=c.sendRequest("POST", mainPath, preferenceObject.toString(), new Pair[]{});
-            assertEquals(200, result.getHttpCode());
-            //assertTrue(result.getResponse().trim().contains("id")); 
-			System.out.println("Result of 'testCreateNodes': " + result.getResponse());
-			
-			// Delete the entry
-			
-			DatabaseManager dbm = new DatabaseManager();
-			dbm.init("com.mysql.jdbc.Driver", "mysql", "3306", "userprofile", "annot", "23pnote477", "eiche");
-			
-			dbm.deletePrefrences("aTestUser");
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-			fail ( "Exception: " + e );
-		}
-		
-	}*/
-	
-	
-	
 }

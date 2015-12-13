@@ -1,28 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<service consumes="*" name="i5.las2peer.services.userPreference.PreferenceClass" path="preference" produces="text/plain" version="0.1">
+<service consumes="*" name="i5.las2peer.services.analytics.AnalyticsClass" path="analytics" produces="text/plain" version="0.1">
   <methods>
-    <method httpMethod="get" name="getSwaggerResourceListing" path="api-docs" produces="application/json" type="i5.las2peer.restMapper.HttpResponse">
-      <parameters/>
+    <method httpMethod="get" name="getDomain" path="domain" type="i5.las2peer.restMapper.HttpResponse">
+      <parameters>
+        <parameter annotation="query" default="0" index="0" name="edge" type="int"/>
+      </parameters>
     </method>
     <method httpMethod="get" name="getSwaggerApiDeclaration" path="api-docs/{tlr}" produces="application/json" type="i5.las2peer.restMapper.HttpResponse">
       <parameters>
         <parameter annotation="path" index="0" name="tlr" type="java.lang.String"/>
       </parameters>
     </method>
-    <method httpMethod="get" name="getExpertise" path="expertise" type="int">
+    <method httpMethod="get" name="getSwaggerResourceListing" path="api-docs" produces="application/json" type="i5.las2peer.restMapper.HttpResponse">
+      <parameters/>
+    </method>
+    <method httpMethod="post" name="postRecommendation" path="recommendation" type="i5.las2peer.restMapper.HttpResponse">
       <parameters>
-        <parameter annotation="query" default="*" index="0" name="username" type="java.lang.String"/>
-        <parameter annotation="query" default="*" index="1" name="domain" type="java.lang.String"/>
+        <parameter annotation="query" default="" index="0" name="Authorization" type="java.lang.String"/>
+        <parameter annotation="query" default="0" index="1" name="edge" type="int"/>
+        <parameter annotation="query" default="0" index="2" name="weight" type="int"/>
       </parameters>
     </method>
-    <method httpMethod="post" name="postPreferences" type="java.lang.String">
+    <method httpMethod="get" name="getAnalytics" type="i5.las2peer.restMapper.HttpResponse">
       <parameters>
-        <parameter annotation="content" index="0" name="" type="java.lang.String"/>
+        <parameter annotation="query" default="*" index="0" name="key" type="java.lang.String"/>
+        <parameter annotation="query" default="0" index="1" name="value" type="int"/>
       </parameters>
     </method>
-    <method httpMethod="get" name="getPreferences" type="java.lang.String">
+    <method httpMethod="get" name="getWeight" path="weight" type="i5.las2peer.restMapper.HttpResponse">
       <parameters>
-        <parameter annotation="query" default="*" index="0" name="username" type="java.lang.String"/>
+        <parameter annotation="query" default="0" index="0" name="edge" type="int"/>
       </parameters>
     </method>
   </methods>
